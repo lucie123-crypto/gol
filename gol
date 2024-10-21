@@ -2,285 +2,440 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <style src="./css/style.css"></style>
-   <script src="main.js"></script>
-   <title>GOL AIRLINES</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style src="./css/style.css"></style>
+    <script src="main.js"></script>
+    <title>GOL AIRLINES</title>
 
-   <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <style>
-   * {
-      margin: 0;
-      /* Removendo as margens padrão*/
-      padding: 0%;
-      /*Removendo o preenchimento padrão*/
-   }
+    body {
+        background: linear-gradient(to right, #f8b796c5, #bebdbbdc);
+    }
 
-   /*Estilizar o cabeçalho*/
-   header {
-      background-color: rgb(231, 133, 68);
-      /*Define a cor de fundo do cabeçalho*/
-      padding: 5px 0px;
-      /*Adicionar espaçamento na parte superior e inferior do cabeçalho*/
-      font-size: 20px;
-      position: fixed;
-      width: 100%;
-   }
+    * {
+        margin: 0;
+        /* Removendo as margens padrão*/
+        padding: 0%;
+        /*Removendo o preenchimento padrão*/
+    }
 
-   nav ul {
-      display: flex;
-      /*Define a exibição dos itens da lista para linha*/
-      list-style: none;
-      /*Remove os marcadores*/
-      justify-content: center;
-      /* Centraliza os itens do menu ao centro*/
-      margin: 14px;
-      /* define Espaçamento entre linhas */
+    /*Estilizar o cabeçalho*/
+    header {
+        background-color: rgb(231, 133, 68);
+        /*Define a cor de fundo do cabeçalho*/
+        padding: 5px 0px;
+        /*Adicionar espaçamento na parte superior e inferior do cabeçalho*/
+        font-size: 20px;
+        position: fixed;
+        width: 100%;
+    }
 
-   }
+    nav ul {
+        display: flex;
+        /*Define a exibição dos itens da lista para linha*/
+        list-style: none;
+        /*Remove os marcadores*/
+        justify-content: center;
+        /* Centraliza os itens do menu ao centro*/
+        margin: 14px;
+        /* define Espaçamento entre linhas */
 
-   nav ul li a {
-      color: white;
-      /* cor da letra branca*/
-      text-decoration: none;
-      /*Removendo o sublinhado*/
-      font-weight: bold;
-      /* Define os textos do link em  negrito*/
-      padding: 10px 20px;
-      transition: color 1s;
+    }
 
-   }
+    nav ul li a {
+        color: white;
+        /* cor da letra branca*/
+        text-decoration: none;
+        /*Removendo o sublinhado*/
+        font-weight: bold;
+        /* Define os textos do link em  negrito*/
+        padding: 10px 20px;
+        transition: color 1s;
 
-   nav ul li a:hover {
-      color: rgb(22, 21, 22);
-      background-color: rgb(255, 241, 252);
-      border-radius: 5px;
-   }
+    }
 
-   section {
-      text-align: center;
-      padding: 60px 20px;
-      height: 900px;
-   }
+    nav ul li a:hover {
+        color: rgb(22, 21, 22);
+        background-color: rgb(255, 241, 252);
+        border-radius: 5px;
+    }
 
-   #Home {
-      background-color: rgb(245, 245, 245);
-      justify-items: center;
-   }
+    section {
+        text-align: center;
+        padding: 60px 20px;
+        height: 900px;
+    }
 
-   #Institucional {
-      background-color: rgb(255, 254, 248);
-      justify-items: center;
+    #Home {
+        background-color: rgb(245, 245, 245);
+        justify-items: center;
+    }
 
-   }
+    #Institucional {
+        background-color: rgb(255, 254, 248);
+        justify-items: center;
 
-   #Contato {
-      background-color: rgb(255, 253, 254);
-      justify-items: center;
-   }
+    }
 
-   .Logo img {
-      width: 150px;
-      height: auto;
-      margin: 50px;
-   }
+    #Contato {
+        background-color: rgb(255, 253, 254);
+        justify-items: center;
+    }
 
-   .Imagem {
-      float: left;
-      margin-right: 300px;
-      /* Ajuste o tamanho da imagem se necessário */
-      width: 800px;
-      /* Exemplo de ajuste de tamanho */
-      border-radius: 5%;
-   }
+    .Logo img {
+        width: 150px;
+        height: auto;
+        margin: 50px;
+    }
 
-   .imagens {
-      float: right;
-      margin-right: 20px;
-      /* Ajuste o tamanho da imagem se necessário */
-      width: 800px;
-      /* Exemplo de ajuste de tamanho */
-      margin-right: 20px;
-      /* Espaço entre a imagem e o texto */
-      border-radius: 5%;
-   }
+    .Imagem {
+        float: left;
+        margin-right: 300px;
+        /* Ajuste o tamanho da imagem se necessário */
+        width: 800px;
+        /* Exemplo de ajuste de tamanho */
 
-   .text {
-      text-align: justify;
-      object-position: right;
-   }
 
-   .tex {
-      text-align: justify;
-      object-position: right;
+    }
 
-   }
+    .imagens {
+        float: right;
+        margin-right: 20px;
+        /* Ajuste o tamanho da imagem se necessário */
+        width: 800px;
+        /* Exemplo de ajuste de tamanho */
+        margin-right: 20px;
+        /* Espaço entre a imagem e o texto */
+
+    }
+
+    .text {
+        text-align: justify;
+        object-position: right;
+        font-size: 25px;
+        padding: 50px;
+    }
+
+    .tex {
+        text-align: justify;
+        object-position: right;
+        font-size: 25px;
+        padding: 50px;
+
+    }
+
+
+    .teste {
+
+        float: left;
+        /* Faz a imagem flutuar à esquerda */
+        margin-right: 5px;
+        /* Espaço entre a imagem e o texto */
+        width: 1000px;
+        /* Ajuste o tamanho conforme necessário */
+        height: auto;
+        /* Mantém a proporção da imagem */
+        text-align: justify;
+        padding: 30px;
+        font-size: 25px;
+        padding: 50px;
+
+    }
+
+
+    h1 {
+        font-size: 35px;
+    }
 </style>
 
 <body>
-   <div class="Menu-Navegação">
-      <header>
-         <nav>
-            <ul>
-               <li> <a href="#inicio"> inicio</a></li><!--link para a seção Home-->
-               <li> <a href="#Institucional"> Institucional</a></li><!--link para a seção Sobre-->
-               <li> <a href="#Áreas de Atuação"> Áreas de Atuação</a></li><!--link para a seção Contato-->
-               <li> <a href="#Contato">Contato</a></li><!--link para a seção Contato-->
-               <li> <a href="#Trabalhe Conosco">Trabalhe Conosco</a></li><!--link para a seção Contato-->
-            </ul>
-         </nav>
-      </header>
-   </div>
-   <div class="Logo">
-      <img src="https://companiesmarketcap.com/img/company-logos/256/GOLL4.SA.png" alt="logo">
-   </div>
+    <div class="Menu-Navegação">
+        <header>
+            <nav>
+                <ul>
+                    <li> <a href="#inicio"> inicio</a></li><!--link para a seção Home-->
+                    <li> <a href="#Institucional"> Institucional</a></li><!--link para a seção Sobre-->
+                    <li> <a href="#Áreas de Atuação"> Áreas de Atuação</a></li><!--link para a seção Contato-->
+                    <li> <a href="#Contato">Contato</a></li><!--link para a seção Contato-->
+                    <li> <a href="#Trabalhe Conosco">Trabalhe Conosco</a></li><!--link para a seção Contato-->
+                </ul>
+                <marquee behavior="scroll" direction="left" scrollamount="12" style="color: white;">
+                    <p>✈️ A Gol Linhas Aéreas conecta mais de 60 destinos no Brasil e no exterior, oferecendo uma
+                        experiência de viagem excepcional e acessível para todos!
+                        Reserve já seu voo e aproveite tarifas especiais, com promoções incríveis que garantem conforto
+                        e praticidade em todas as suas viagens!
+                        🚀 Nossa frota moderna, composta por aeronaves Boeing 737, é reconhecida por sua eficiência e
+                        segurança, e nosso compromisso inabalável com a pontualidade assegura que você chegue ao seu
+                        destino a tempo.
+                        🌍 Explore nossos pacotes de viagem e descubra o mundo com a Gol, desde escapadas de fim de
+                        semana até viagens internacionais que tornam suas férias inesquecíveis!
+                        🛫 Não perca! O Programa de Fidelidade Smiles oferece benefícios exclusivos que permitem
+                        acumular milhas e trocá-las por passagens aéreas, upgrades de classe, produtos e experiências
+                        incríveis que tornam sua jornada ainda mais especial!
+                        💼 Para viajantes de negócios, a Gol proporciona serviços diferenciados que incluem check-in
+                        prioritário e acesso a salas VIP em aeroportos, garantindo uma viagem tranquila e produtiva.
+                        📞 Entre em contato conosco: atendimento@voegol.com.br | 0300 115 2121, e tenha a melhor
+                        experiência de viagem com a Gol, onde conectamos pessoas e transformamos vidas a cada decolagem!
+                        🌟 A Gol também se preocupa com a sustentabilidade, implementando práticas que visam reduzir a
+                        emissão de carbono e apoiar iniciativas sociais nas comunidades onde atuamos. Venha voar com a
+                        gente!</p>
+                </marquee>
+            </nav>
+        </header>
+    </div>
+    <div class="Logo">
+        <img src="https://companiesmarketcap.com/img/company-logos/256/GOLL4.SA.png" alt="logo">
+    </div>
+    <H1 style="text-align: center; color: rgb(231, 141, 57); ">GOL AIRLINES</H1>
+    <section id="Inicio">
 
-   <section id="Inicio">
-      <H1>GOL AIRLINES</H1>
-      <img class="imagens" class="img" src="https://static.voegol.com.br/voegol/inline-images/Santos%20Dumont_0.png"
-         alt="aviao">
-      <h2 class="text">
-         A Gol Linhas Aéreas é uma das principais companhias aéreas brasileiras, fundada em 2001, com o objetivo de
-         oferecer voos acessíveis e de qualidade. Desde então, se consolidou como uma das líderes do setor, com uma
-         ampla malha aérea que conecta diversas cidades do Brasil e destinos internacionais. A Gol é conhecida por sua
-         eficiência, foco em atendimento ao cliente e por ser pioneira em diversas inovações no transporte aéreo. Com
-         uma frota moderna e compromisso com a pontualidade, a empresa continua a expandir suas operações e a contribuir
-         para a conectividade aérea no país.</h2>
-      <img class="Imagem" src="https://static.voegol.com.br/voegol/inline-images/canarinho.png" alt="aviao">
+        <table colspan="2">
+            <tr>
+                <td class="teste-aviao">
+                    <img class="tamanho" src="https://static.voegol.com.br/voegol/inline-images/Santos%20Dumont_0.png"
+                        alt="aviao">
+                </td>
+
+                <td class="text" class="teste">
+                    <h1 class="h1" style="text-align: center;">Gol Airlines Uma Nova Ideia em Viação</h1>
+
+                    A Gol Linhas Aéreas, fundada em 2001, é uma das principais companhias aéreas do Brasil, conhecida
+                    por oferecer voos acessíveis e de qualidade. Com uma vasta malha aérea, conecta cidades brasileiras
+                    e destinos internacionais na América do Sul e do Norte.
+
+                    A Gol se destaca pela eficiência e foco no atendimento ao cliente, implementando inovações como
+                    check-in online e entretenimento a bordo. Além disso, a companhia tem um forte compromisso com a
+                    sustentabilidade, buscando reduzir a emissão de carbono e apoiar iniciativas sociais.
+
+                    Com uma frota moderna de Boeing 737, a Gol garante segurança, conforto e pontualidade. As tarifas
+                    competitivas e a transparência nos serviços são prioridades, assegurando que os passageiros tenham
+                    informações claras.
+
+                    Com um olhar voltado para o futuro, a Gol continua a inovar, sempre priorizando a experiência do
+                    cliente e facilitando o deslocamento entre destinos.
 
 
-   </section>
-   <section id="Institucional">
-      <H1>Institucional</H1>
-      <img class="Imagem" src="https://static.voegol.com.br/voegol/inline-images/frota%20estrelada_0.png" alt="aviao">
-      <h2 class="text">A Gol Linhas Aéreas é uma das maiores companhias aéreas do Brasil, fundada em 2001 com o
-         propósito de tornar o
-         transporte aéreo mais acessível e democrático. Com uma ampla malha aérea que conecta mais de 60 destinos no
-         Brasil e no exterior, a Gol se destaca por sua eficiência, compromisso com a pontualidade e atendimento de
-         excelência.
 
-         Com uma frota moderna composta por aeronaves Boeing 737, a Gol investe continuamente em tecnologia e inovação
-         para oferecer a seus passageiros uma experiência de voo segura, confortável e prática. A empresa se preocupa em
-         fornecer opções flexíveis e acessíveis, atendendo tanto a viajantes de negócios quanto a turistas.
+                </td>
+            </tr>
+        </table>
 
-         Além disso, a Gol se preocupa com a sustentabilidade e responsabilidade social, implementando práticas que
-         visam minimizar os impactos ambientais e apoiar as comunidades onde opera. Como uma empresa com fortes laços
-         com o Brasil, a Gol é um símbolo de confiança e conexão, facilitando o deslocamento de pessoas e a integração
-         entre as diferentes regiões do país e o mundo.</h2>
-      <img class="imagens" src="https://static.voegol.com.br/voegol/inline-images/canarinho_0.png" alt="aviao">
+        <table>
+            <tr>
+                <td>
+                    <img src="https://static.voegol.com.br/voegol/inline-images/canarinho.png" alt="aviao">
+                </td>
 
-      <p class="tex">Desde sua fundação em 2001, a Gol Linhas Aéreas tem como missão transformar o modo como as pessoas
-         viajam,
-         tornando o transporte aéreo acessível a todos. Com uma abordagem focada em simplicidade e qualidade, a Gol se
-         consolidou como líder no mercado brasileiro, oferecendo uma experiência de voo que combina preços acessíveis
-         com um serviço ágil e eficiente.
+                <h1 class="h1" style="text-align: center; padding-right: 750px;">Compromisso e Inovação da Gol Linhas
+                    Aéreas</h1>
+                <p class="teste" class="text" st>
 
-         A Gol possui uma extensa rede de rotas que conecta diversas cidades brasileiras e destinos internacionais,
-         sempre com o compromisso de proporcionar segurança, pontualidade e conforto. A companhia se orgulha de sua
-         frota moderna e em constante renovação, composta principalmente por aeronaves Boeing 737, garantindo operações
-         mais eficientes e sustentáveis.
+                    A Gol é reconhecida pela sua eficiência operacional e foco no atendimento ao cliente, destacando-se
+                    como
+                    pioneira em inovações no transporte aéreo. Com uma frota moderna e em constante renovação, a
+                    companhia
+                    demonstra um forte compromisso com a pontualidade, assegurando voos confiáveis.
 
-         Além de sua excelência em serviços aéreos, a Gol valoriza a inovação, investindo em tecnologia para facilitar a
-         experiência do cliente, seja no processo de compra online, no check-in ou no acompanhamento de voos. Com um
-         compromisso com a sustentabilidade e responsabilidade social, a Gol continua a voar rumo a um futuro mais
-         conectado, acessível e sustentável para todos.</p>
-   </section>
-   <section id="Áreas de Atuação">
-      <H1>Áreas de Atuação</H1>
+                    A Gol continua a expandir suas operações, aumentando sua malha aérea e conectando novas cidades,
+                    beneficiando clientes com mais opções de voos e contribuindo para a conectividade no Brasil. A
+                    empresa
+                    adapta seus serviços às necessidades dos viajantes, mantendo-se relevante e centrada no cliente,
+                    pronta
+                    para enfrentar os desafios do futuro.
+            </tr>
+        </table>
+    </section>
 
-      <img src="https://investidorsardinha.r7.com/wp-content/uploads/2020/04/gol-linhas-aereas-goll4-1024x566.png"
-         alt="">
-      <h3 class="text">1. Transporte Aéreo Nacional
-         Conexões domésticas: A Gol é uma das maiores companhias aéreas brasileiras, com uma vasta rede de voos que
-         conecta mais de 60 destinos no Brasil. As principais cidades atendidas incluem São Paulo, Rio de Janeiro,
-         Brasília, Salvador, Fortaleza, Belo Horizonte, Porto Alegre, Curitiba, entre outras.
-         Voos diretos e regionais: A Gol oferece serviços para grandes centros urbanos, bem como destinos regionais
-         menores, facilitando a mobilidade de passageiros por todo o território brasileiro.
-         2. Transporte Aéreo Internacional
-         Voos internacionais: A Gol também atua no mercado internacional, conectando o Brasil a destinos na América do
-         Sul, América do Norte e, recentemente, expandindo para o Caribe. Destinos como Miami, Orlando, Buenos Aires,
-         Santiago, Montevidéu e Bogotá estão entre suas rotas internacionais.
-         Parcerias internacionais: A Gol mantém acordos de codeshare com companhias aéreas internacionais, como a Delta
-         Air Lines, o que amplia suas opções de destinos globais para seus passageiros.
-         3. Serviços de Carga Aérea
-         Logística e transporte de carga: Além de transportar passageiros, a Gol oferece serviços de transporte de
-         cargas, operando com a GolLog, sua unidade especializada em logística e transporte de mercadorias. Isso permite
-         a entrega de produtos com maior eficiência por meio de uma rede aérea rápida e integrada.
-         4. Turismo e Pacotes de Viagens
-         Venda de pacotes turísticos: A Gol também atua na oferta de pacotes turísticos, em parceria com agências de
-         turismo e operadoras, facilitando a venda de viagens completas, incluindo passagens aéreas, hospedagem e outros
-         serviços.
-         5. Programas de Fidelidade
-         Smiles: A Gol opera o programa de milhas Smiles, que permite que seus passageiros acumulem pontos e os troquem
-         por passagens aéreas, upgrades de classe, produtos, entre outros benefícios. O Smiles é um dos maiores
-         programas de fidelidade do Brasil, com parcerias nacionais e internacionais.
-         6. Inovação e Tecnologia
-         Investimentos em tecnologia: A Gol também está envolvida na implementação de novas tecnologias para facilitar a
-         experiência do cliente, como o check-in online, sistemas de entretenimento a bordo, e uso de aplicativos móveis
-         para gerenciar reservas e serviços.
-         7. Sustentabilidade e Responsabilidade Social
-         Projetos socioambientais: A Gol investe em práticas de sustentabilidade, como a redução de emissão de gases
-         poluentes e iniciativas de compensação de carbono. A empresa também realiza ações voltadas para a
-         responsabilidade social, como programas de apoio a comunidades locais e a promoção de educação e inclusão
-         social.
-         8. Serviços de Charter e Executivo
-         Voos charter e fretamento: A Gol oferece serviços de voo charter para grupos corporativos e eventos especiais,
-         além de voos fretados para empresas e clientes que necessitam de viagens personalizadas.</h3>
-   </section>
 
-   <section id="Contato">
-      <H1>Contato</H1>
-      <img src="https://static.voegol.com.br/voegol/inline-images/Avi%C3%A3o%20Cart%C3%A3o%20Smiles.png" alt="">
-      <p>Entre em Contato Conosco</p>
-      <p class="text">Na Gol Linhas Aéreas, nosso compromisso vai além de oferecer viagens confortáveis e acessíveis.
-         Estamos sempre
-         prontos para ajudar! Sabemos que a comunicação eficiente e o suporte de qualidade são essenciais para garantir
-         uma experiência inesquecível para nossos passageiros. Se você tiver qualquer dúvida, sugestão ou precisar de
-         mais informações sobre nossos serviços, não hesite em entrar em contato conosco.
+    <section id="Institucional" style="background: linear-gradient(to right, #f8b796c5, #bebdbbdc)">
+        <table colspan="2">
+            <tr>
+                <td class="teste-aviao">
+                    <img class="tamanho" src="https://static.voegol.com.br/voegol/inline-images/frota%20estrelada_0.png"
+                        alt="aviao">
+                </td>
 
-         Nossa equipe está disponível 24 horas por dia, 7 dias por semana, para fornecer o suporte necessário, seja para
-         esclarecer dúvidas sobre passagens, políticas de bagagem, check-in ou outros serviços que oferecemos. Queremos
-         que sua jornada seja tranquila, desde o momento da compra do bilhete até o pouso em seu destino.</p>
-      <h1>Formas de contato:</h1>
-      <ol>
-         <li>E-mail: atendimento@voegol.com.br</li>
-         <li>Telefone: 0300 115 2121</li>
-         <li></li>
-      </ol>
-      <h1>Redes Sociais</h1>
-      <ol>
-         <li>Instagram: @voegol</li>
-         <li>Facebook: @GolLinhasAereas</li>
-         <li>LinkedIn: Gol Linhas Aéreas</li>
-      </ol>
+                <td class="text" class="teste">
+                    <h1 class="h1" style="text-align: center;">
+                        A Gol Linhas Aéreas: Acessibilidade e Confiabilidade
+                    </h1> 
+                        <p class="teste" class="text" st>
+                            A Gol Linhas Aéreas, fundada em 2001, é uma das maiores companhias aéreas do Brasil, com o propósito de tornar o transporte aéreo mais acessível. Com uma malha aérea que conecta mais de 60 destinos no Brasil e no exterior, a Gol se destaca pela eficiência, pontualidade e atendimento de excelência. Com uma frota moderna de Boeing 737, a Gol investe em tecnologia e inovação para proporcionar voos seguros e confortáveis. A empresa oferece opções flexíveis para viajantes de negócios e turistas. Comprometida com a sustentabilidade, a Gol implementa práticas que minimizam impactos ambientais e apoiam comunidades locais, consolidando-se como um símbolo de confiança e conexão no Brasil e no mundo.
+                        </p>
 
-   </section>
 
-   <section id="Trabalhe Conosco">
-      <H1>Trabalhe Conosco</H1>
-      <p class="text">Na Gol Linhas Aéreas, acreditamos que nosso sucesso é resultado da dedicação e do talento de nossa
-         equipe. Por
-         isso, buscamos profissionais apaixonados, inovadores e com vontade de crescer junto conosco. Se você é movido
-         por desafios, valoriza o trabalho em equipe e quer fazer parte de uma das maiores companhias aéreas do Brasil,
-         o seu lugar é aqui!</p>
-      <h1>Por que trabalhar na Gol?</h1>
-      <p class="text"> Trabalhar na Gol é mais do que estar em uma empresa que lidera o setor de aviação. É fazer parte
-         de um ambiente dinâmico, colaborativo e que valoriza a diversidade, a inclusão e o desenvolvimento pessoal e
-         profissional. Investimos continuamente em capacitação e aprendizado para que nossos colaboradores possam
-         evoluir e crescer, oferecendo oportunidades tanto para quem está iniciando a carreira quanto para os mais
-         experientes.</p>
-      <h1>Vagas Abertas</h1>
-      <p class="text">Se você está pronto para decolar com a gente, confira nossas vagas abertas e faça parte do nosso time! Acesse
-         nosso portal de carreiras e inscreva-se para as oportunidades que mais se alinham ao seu perfil. Se não
-         encontrar uma vaga no momento, envie seu currículo para o nosso banco de talentos para futuras oportunidades.
-      </p>
-      <h1>Junte-se a nós e ajude a Gol a continuar conectando pessoas e transformando vidas.</h1>
-      <p >Estamos ansiosos para conhecer você e, juntos, criar novas histórias de sucesso nos céus e no coração de nossos passageiros.</p>
-      <img src="https://media.glassdoor.com/l/88/6f/bb/28/gol.jpg?signature=64bd41d6caa21cdb3e0dc430a098de8803792e1a1943afe82f2a0ca5e236e464" alt="">
-   </section>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="https://static.voegol.com.br/voegol/inline-images/canarinho_0.png" alt="aviao">
+                </td>
+
+                <h1 class="h1" style="text-align: center; padding-right: 750px;">Missão da Gol Linhas Aéreas</h1>
+                <p class="teste" class="text" st>
+
+                    Desde 2001, a Gol Linhas Aéreas tem a missão de transformar o transporte aéreo, tornando-o acessível
+                    a todos. Com foco em simplicidade e qualidade, a Gol se consolidou como líder no Brasil, oferecendo
+                    voos com preços competitivos e serviço ágil.
+
+                    A companhia conecta diversas cidades brasileiras e destinos internacionais, garantindo segurança,
+                    pontualidade e conforto. Com uma frota moderna de Boeing 737, a Gol busca operações eficientes e
+                    sustentáveis.
+
+                    Além disso, a Gol investe em inovação e tecnologia para facilitar a experiência do cliente, desde a
+                    compra até o acompanhamento de voos, mantendo seu compromisso com a sustentabilidade e
+                    responsabilidade social.
+            </tr>
+        </table>
+
+
+        <section id="Áreas de Atuação">
+
+            <table>
+                <H1>Áreas de Atuação</H1>
+                <img src="https://investidorsardinha.r7.com/wp-content/uploads/2020/04/gol-linhas-aereas-goll4-1024x566.png"
+                    alt="">
+                <h3 class="text">1. Transporte Aéreo Nacional
+                    Conexões domésticas: A Gol é uma das maiores companhias aéreas brasileiras, com uma vasta rede de
+                    voos
+                    que
+                    conecta mais de 60 destinos no Brasil. As principais cidades atendidas incluem São Paulo, Rio de
+                    Janeiro,
+                    Brasília, Salvador, Fortaleza, Belo Horizonte, Porto Alegre, Curitiba, entre outras.
+                    Voos diretos e regionais: A Gol oferece serviços para grandes centros urbanos, bem como destinos
+                    regionais
+                    menores, facilitando a mobilidade de passageiros por todo o território brasileiro.
+                    2. Transporte Aéreo Internacional
+                    Voos internacionais: A Gol também atua no mercado internacional, conectando o Brasil a destinos na
+                    América do
+                    Sul, América do Norte e, recentemente, expandindo para o Caribe. Destinos como Miami, Orlando,
+                    Buenos
+                    Aires,
+                    Santiago, Montevidéu e Bogotá estão entre suas rotas internacionais.
+                    Parcerias internacionais: A Gol mantém acordos de codeshare com companhias aéreas internacionais,
+                    como a
+                    Delta
+                    Air Lines, o que amplia suas opções de destinos globais para seus passageiros.
+                    3. Serviços de Carga Aérea
+                    Logística e transporte de carga: Além de transportar passageiros, a Gol oferece serviços de
+                    transporte
+                    de
+                    cargas, operando com a GolLog, sua unidade especializada em logística e transporte de mercadorias.
+                    Isso
+                    permite
+                    a entrega de produtos com maior eficiência por meio de uma rede aérea rápida e integrada.
+                    4. Turismo e Pacotes de Viagens
+                    Venda de pacotes turísticos: A Gol também atua na oferta de pacotes turísticos, em parceria com
+                    agências
+                    de
+                    turismo e operadoras, facilitando a venda de viagens completas, incluindo passagens aéreas,
+                    hospedagem e
+                    outros
+                    serviços.
+                    5. Programas de Fidelidade
+                    Smiles: A Gol opera o programa de milhas Smiles, que permite que seus passageiros acumulem pontos e
+                    os
+                    troquem
+                    por passagens aéreas, upgrades de classe, produtos, entre outros benefícios. O Smiles é um dos
+                    maiores
+                    programas de fidelidade do Brasil, com parcerias nacionais e internacionais.
+                    6. Inovação e Tecnologia
+                    Investimentos em tecnologia: A Gol também está envolvida na implementação de novas tecnologias para
+                    facilitar a
+                    experiência do cliente, como o check-in online, sistemas de entretenimento a bordo, e uso de
+                    aplicativos
+                    móveis
+                    para gerenciar reservas e serviços.
+                    7. Sustentabilidade e Responsabilidade Social
+                    Projetos socioambientais: A Gol investe em práticas de sustentabilidade, como a redução de emissão
+                    de
+                    gases
+                    poluentes e iniciativas de compensação de carbono. A empresa também realiza ações voltadas para a
+                    responsabilidade social, como programas de apoio a comunidades locais e a promoção de educação e
+                    inclusão
+                    social.
+                    8. Serviços de Charter e Executivo
+                    Voos charter e fretamento: A Gol oferece serviços de voo charter para grupos corporativos e eventos
+                    especiais,
+                    além de voos fretados para empresas e clientes que necessitam de viagens personalizadas.</h3>
+            </table>
+
+        </section>
+
+        <section id="Contato">
+            <H1>Contato</H1>
+            <img src="https://static.voegol.com.br/voegol/inline-images/Avi%C3%A3o%20Cart%C3%A3o%20Smiles.png" alt="">
+            <p>Entre em Contato Conosco</p>
+            <p class="text">Na Gol Linhas Aéreas, nosso compromisso vai além de oferecer viagens confortáveis e
+                acessíveis.
+                Estamos sempre
+                prontos para ajudar! Sabemos que a comunicação eficiente e o suporte de qualidade são essenciais para
+                garantir
+                uma experiência inesquecível para nossos passageiros. Se você tiver qualquer dúvida, sugestão ou
+                precisar de
+                mais informações sobre nossos serviços, não hesite em entrar em contato conosco.
+
+                Nossa equipe está disponível 24 horas por dia, 7 dias por semana, para fornecer o suporte necessário,
+                seja
+                para
+                esclarecer dúvidas sobre passagens, políticas de bagagem, check-in ou outros serviços que oferecemos.
+                Queremos
+                que sua jornada seja tranquila, desde o momento da compra do bilhete até o pouso em seu destino.</p>
+            <h1>Formas de contato:</h1>
+            <ol>
+                <li>E-mail: atendimento@voegol.com.br</li>
+                <li>Telefone: 0300 115 2121</li>
+                <li></li>
+            </ol>
+            <h1>Redes Sociais</h1>
+            <ol>
+                <li>Instagram: @voegol</li>
+                <li>Facebook: @GolLinhasAereas</li>
+                <li>LinkedIn: Gol Linhas Aéreas</li>
+            </ol>
+
+        </section>
+
+        <section id="Trabalhe Conosco">
+            <H1>Trabalhe Conosco</H1>
+            <p class="text">Na Gol Linhas Aéreas, acreditamos que nosso sucesso é resultado da dedicação e do talento de
+                nossa
+                equipe. Por
+                isso, buscamos profissionais apaixonados, inovadores e com vontade de crescer junto conosco. Se você é
+                movido
+                por desafios, valoriza o trabalho em equipe e quer fazer parte de uma das maiores companhias aéreas do
+                Brasil,
+                o seu lugar é aqui!</p>
+            <h1>Por que trabalhar na Gol?</h1>
+            <p class="text"> Trabalhar na Gol é mais do que estar em uma empresa que lidera o setor de aviação. É fazer
+                parte
+                de um ambiente dinâmico, colaborativo e que valoriza a diversidade, a inclusão e o desenvolvimento
+                pessoal e
+                profissional. Investimos continuamente em capacitação e aprendizado para que nossos colaboradores possam
+                evoluir e crescer, oferecendo oportunidades tanto para quem está iniciando a carreira quanto para os
+                mais
+                experientes.</p>
+            <h1>Vagas Abertas</h1>
+            <p class="text">Se você está pronto para decolar com a gente, confira nossas vagas abertas e faça parte do
+                nosso
+                time! Acesse
+                nosso portal de carreiras e inscreva-se para as oportunidades que mais se alinham ao seu perfil. Se não
+                encontrar uma vaga no momento, envie seu currículo para o nosso banco de talentos para futuras
+                oportunidades.
+            </p>
+            <h1>Junte-se a nós e ajude a Gol a continuar conectando pessoas e transformando vidas.</h1>
+            <p>Estamos ansiosos para conhecer você e, juntos, criar novas histórias de sucesso nos céus e no coração de
+                nossos passageiros.</p>
+            <img src="https://media.glassdoor.com/l/88/6f/bb/28/gol.jpg?signature=64bd41d6caa21cdb3e0dc430a098de8803792e1a1943afe82f2a0ca5e236e464"
+                alt="">
+        </section>
 </body>
 
 </html>
